@@ -7,9 +7,9 @@ import org.w3c.dom.DOMException;
 import org.w3c.dom.Node;
 
 public class Weather {
-	static final SimpleDateFormat FORMAT = new SimpleDateFormat("yyyy-MM-dd'T'HH:mm:ss");
-	static final String mask = "%-30s%-15s%-10s%-20s%-10s%-10s";
-	public static final String HEADER = String.format(mask, "Time","State","Temp","Wind","Humidity","Pressure");
+	public static final SimpleDateFormat FORMAT = new SimpleDateFormat("yyyy-MM-dd'T'HH:mm:ss");
+	static final String MASK = "%-30s%-15s%-10s%-20s%-10s%-10s";
+	public static final String HEADER = String.format(MASK, "Time","State","Temp","Wind","Humidity","Pressure");
 	
 	private Date time;
 	private String state; 
@@ -83,7 +83,7 @@ public class Weather {
 	@Override
 	public String toString() {
 
-		return String.format(mask, time, state,temperature,wind,humidity,pressure);
+		return String.format(MASK, time, state,temperature,wind,humidity,pressure);
 	}
 	
 }

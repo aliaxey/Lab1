@@ -14,7 +14,7 @@ import org.xml.sax.SAXException;
 
 import by.example.weather.Weather;
 
-public class Runner {
+public class RunnerDOM {
 
 	static final String SOURCE = "http://api.openweathermap.org/data/2.5/forecast?q=Gamel&lang=ru&appid=5753974d4f4e8e428ba77f4eb8816501&mode=xml&units=metric";
 	public static void main(String[] args) {
